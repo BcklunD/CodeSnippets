@@ -1,0 +1,41 @@
+{
+  "name": "a02-crud-code-snippets",
+  "version": "1.0.0",
+  "description": "Second assignmnet for the course 1DV513 at Linnéaus University",
+  "main": "app.js",
+  "scripts": {
+    "lint": "npx eslint . || exit 0",
+    "lint:fix": "npx eslint . --fix || exit 0",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab.lnu.se:1dv523/student/sb223rd/a02-crud-code-snippets.git"
+  },
+  "author": "Simon Bäcklund",
+  "license": "MIT",
+  "devDependencies": {
+    "@lnu/eslint-config": "^1.1.2",
+    "eslint": "^7.15.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsdoc": "^30.7.8",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^5.0.0"
+  },
+  "eslintConfig": {
+    "extends": "@lnu"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-hbs": "^2.3.4",
+    "express-session": "^1.17.1",
+    "http-errors": "^1.7.2",
+    "moment": "^2.29.1",
+    "mongoose": "^5.11.5",
+    "morgan": "^1.10.0",
+    "path": "^0.12.7"
+  }
+}

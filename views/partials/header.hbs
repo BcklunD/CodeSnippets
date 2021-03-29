@@ -1,0 +1,16 @@
+<header>
+  <nav>
+      <a class="nav-main" href="/">Code Snippets</a>  
+      <a href="/all">All</a>
+      <a href="/new">New</a>
+      <a href="/update">Update</a>
+      <a href="/delete">Delete</a>
+      {{#if user}}
+      <text class="right">{{user}}</text>
+      <a class="right" href="/logout">Logout</a>
+      {{else}}
+      <a class="right" href="/login">Login</a>
+      <a class="right" href="/register">Register</a>
+      {{/if}}
+  </nav>
+</header>

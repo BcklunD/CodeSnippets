@@ -1,0 +1,45 @@
+<h1>All Code Snippets</h1>
+
+{{>flash}}
+<br>
+<form method=post>
+  <div id="allForm">
+    Filter on user:
+    {{#if viewData.filter}}
+    <input type="text" name="value" value="{{viewData.filter}}">
+    {{else}}
+    <input type="text" name="value" placeholder="User...">
+    {{/if}}
+    <input type="submit" name="doit" value="Confirm">
+  </div>
+</form>
+<table>
+  <thead>
+    <tr>
+      <th scope="col">ID</th>
+      <th scope="col">Created</th>
+      <th scope="col">User</th>
+      <th scope="col">Code Snippet</th>
+      <th scope="col"></th>
+      <th scope="col"></th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#if viewData.codeSnippets.length}}
+    {{#each viewData.codeSnippets}}
+    <tr>
+      <td>{{this.id}}</td>
+      <td>{{this.createdAt}}</td>
+      <td><b>{{this.user}}</b></td>
+      <td><code>{{this.value}}</code></td>
+      <td onclick="window.location='./update/{{this.id}}';"><button class="tableButton">Update</button></td>
+      <td onclick="window.location='./delete/{{this.id}}';"><button class="tableButton">Delete</button></td>
+    </tr>
+    {{/each}}
+    {{else}}
+    <tr>
+      <td colspan="6">No code snippets to display.</td>
+    </tr>
+  {{/if}}
+  </tbody>
+</table>

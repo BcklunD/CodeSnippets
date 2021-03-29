@@ -1,0 +1,16 @@
+<h1>Delete a Code Snippet</h1>
+{{>flash}}
+<div id="newForm">
+  <form method=post>
+      {{#if viewData}}
+        <h3>Are you sure you want to delete this code snippet?</h3>
+        <p><input type="number" value="{{viewData.id}}" disabled="true"></p>
+        <h3>User: {{viewData.user}}</h3>
+        <textarea name="value" required="required" disabled="true">{{viewData.value}}</textarea>
+      {{else}}
+        <h3>ID of the code snippet you want to delete. You can only delete your own snippets</h3>
+        <p><input type="number" name="id" placeholder="ID" required="required" autofocus="autofocus"></p>
+      {{/if}}
+      <p><input type="submit" name="doit" value="Confirm"></p>
+  </form>
+</div>

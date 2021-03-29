@@ -1,0 +1,16 @@
+<h1>Update a Code Snippet</h1>
+
+{{>flash}}
+<div id="newForm">
+  <form method=post>
+      {{#if viewData}}
+        <p><input type="number" value="{{viewData.id}}" disabled="true"></p>
+        <h3>User: {{viewData.user}}</h3>
+        <textarea name="value" required="required" autofocus="autofocus">{{viewData.value}}</textarea>
+      {{else}}
+        <h3>ID of the snippet you wish to update. You can only update your own snippets</h3>
+        <p><input type="number" name="id" placeholder="ID" required="required" autofocus="autofocus"></p>
+      {{/if}}
+      <p><input type="submit" name="doit" value="Confirm"></p>
+  </form>
+</div>

@@ -1,0 +1,166 @@
+html,
+body {
+  margin: 0;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h1 { text-align: center; }
+
+input[type="submit"], button { border-radius: 15px; }
+
+nav {
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: larger;
+    background-color: rgb(36, 35, 35);
+}
+
+nav a{
+    text-decoration: none;
+    color: rgb(239, 255, 232);
+    margin-left: 10px; 
+}
+
+nav a:hover { 
+    color: rgb(150, 255, 129); 
+    text-decoration: underline;
+}
+
+nav .right {
+    float: right;
+    padding-right: 15px;
+}
+
+nav text { 
+    float: right;
+    color: white;
+    font-size: 22px;
+    font-family: 'Bradley Hand', cursive;
+    line-height: 0.9;
+}
+
+nav .nav-main { font-size: x-large; }
+
+#index { text-align: center; }
+
+.flash-success {
+    padding: 15px;
+    border-radius: 15px;
+    width: fit-content;
+    text-align: center;
+    margin: auto;
+    color: rgb(61, 61, 61);
+    background-color: rgba(150, 255, 136, 0.329);
+}
+
+.flash-fail {
+    padding: 15px;
+    border-radius: 15px;
+    width: fit-content;
+    text-align: center;
+    margin: auto;
+    color: rgb(61, 61, 61);
+    background-color: rgba(255, 136, 136, 0.575);
+}
+
+#newForm { text-align: center; }
+
+#newForm textarea {
+    margin-top: 10px;
+    text-align: none;
+    height: 400px;
+    width: 40%;
+    font-size: 18px;
+    resize: none;
+}
+
+#newForm input[type=submit] {
+    height: 40px;
+    width: 90px;
+    font-size: 18px;
+}
+
+#newForm input[type=submit]:hover { background-color: #c2c2c2; }
+
+#newForm input[type=number] {
+    height: 30px;
+    width: 100px;
+    font-size: 18px;
+}
+
+table {
+    width: 80%;
+    border-collapse: collapse;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+th, td {
+    border: 1px solid #8d8d8d;
+    max-width: 800px;
+    padding: 7px;
+    text-align: left;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+th {
+    background-color: #4e4e4e;
+    color: white;
+}
+
+tr:nth-child(even){ background-color: #f2f2f2; }
+
+tr:hover { background-color: #cccccc; }
+
+.tableButton {
+    background-color: rgb(49, 49, 49);
+    color: white;
+    height: 25px;
+}
+
+.tableButton:hover { background-color: rgb(87, 87, 87); }
+
+#login { 
+    text-align: center; 
+    margin-top: 80px;
+}
+
+#login input[type="text"], input[type="password"] {
+    width: 240px;
+    height: 30px;
+    font-size: 22px;
+}
+
+#login input[type="submit"] {
+    margin-top: 20px;
+    width: 120px;
+    height: 40px;
+    font-size: 24px;
+}
+
+#login input[type="submit"]:hover { 
+    background-color: #9bffb4;
+    width: 130px;
+    height: 45px;
+    font-size: 26px;
+}
+
+#allForm {
+    margin-left: 10%;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+#allForm input[type="text"] {
+    height: 20px;
+    font-size: 18px;
+    width: 160px;
+}
+
+#allForm input[type="submit"]:hover { background-color: #e2e2e2;}
+
+#error { padding-left: 30px; }
+
+#error h1 { text-align: left; }
